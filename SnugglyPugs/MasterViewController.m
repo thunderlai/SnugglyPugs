@@ -6,6 +6,10 @@
 //  Copyright (c) 2013 Clarence Lai. All rights reserved.
 //
 
+// At top of file
+#import "SnugglyPugDoc.h"
+#import "SnugglyPugData.h"
+
 #import "MasterViewController.h"
 
 #import "DetailViewController.h"
@@ -16,6 +20,9 @@
 @end
 
 @implementation MasterViewController
+
+// After @implementation
+@synthesize bugs = _bugs;
 
 - (void)awakeFromNib
 {
@@ -30,7 +37,12 @@
 
     UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(insertNewObject:)];
     self.navigationItem.rightBarButtonItem = addButton;
+
+    // At the end of viewDidLoad
+    self.title = @"Scary Bugs";
 }
+
+
 
 - (void)didReceiveMemoryWarning
 {
@@ -48,6 +60,10 @@
     [self.tableView insertRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
 }
 
+
+// Replace the return statement in shouldAutorotateToInterfaceOrientation with:
+// return YES;
+
 #pragma mark - Table View
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
@@ -57,15 +73,30 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return _objects.count;
+//    return _objects.count;
+    // Replace the return statement in tableView:numberOfRowsInSection with the following:
+    return _bugs.count;
 }
 
+/*
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
 
     NSDate *object = _objects[indexPath.row];
     cell.textLabel.text = [object description];
+    return cell;
+}
+*/
+// Replace tableView:cellForRowAtIndexPath with the following
+- (UITableViewCell *)tableView:(UITableView *)tableView
+         cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    UITableViewCell *cell = [tableView
+                             dequeueReusableCellWithIdentifier:@"MyBasicCell"];
+    SnugglyPugDoc *bug = [self.bugs objectAtIndex:indexPath.row];
+    cell.textLabel.text = bug.data.title;
+    cell.imageView.image = bug.thumbImage;
     return cell;
 }
 
