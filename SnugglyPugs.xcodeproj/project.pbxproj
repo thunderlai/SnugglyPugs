@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2AA4A3F6180BB53700F8DF30 /* pug1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2AA4A3EE180BB53700F8DF30 /* pug1.jpg */; };
+		2AA4A3F7180BB53700F8DF30 /* pug1thumb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2AA4A3EF180BB53700F8DF30 /* pug1thumb.jpg */; };
+		2AA4A3F8180BB53700F8DF30 /* pug2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2AA4A3F0180BB53700F8DF30 /* pug2.jpg */; };
+		2AA4A3F9180BB53700F8DF30 /* pug2thumb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2AA4A3F1180BB53700F8DF30 /* pug2thumb.jpg */; };
+		2AA4A3FA180BB53700F8DF30 /* pug3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2AA4A3F2180BB53700F8DF30 /* pug3.jpg */; };
+		2AA4A3FB180BB53700F8DF30 /* pug3thumb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2AA4A3F3180BB53700F8DF30 /* pug3thumb.jpg */; };
+		2AA4A3FC180BB53700F8DF30 /* pug4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2AA4A3F4180BB53700F8DF30 /* pug4.jpg */; };
+		2AA4A3FD180BB53700F8DF30 /* pug4thumb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2AA4A3F5180BB53700F8DF30 /* pug4thumb.jpg */; };
 		2AB5818B1808FE4F00561E6D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AB5818A1808FE4F00561E6D /* UIKit.framework */; };
 		2AB5818D1808FE4F00561E6D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AB5818C1808FE4F00561E6D /* Foundation.framework */; };
 		2AB5818F1808FE4F00561E6D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AB5818E1808FE4F00561E6D /* CoreGraphics.framework */; };
@@ -24,6 +32,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2AA4A3EE180BB53700F8DF30 /* pug1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pug1.jpg; sourceTree = "<group>"; };
+		2AA4A3EF180BB53700F8DF30 /* pug1thumb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pug1thumb.jpg; sourceTree = "<group>"; };
+		2AA4A3F0180BB53700F8DF30 /* pug2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pug2.jpg; sourceTree = "<group>"; };
+		2AA4A3F1180BB53700F8DF30 /* pug2thumb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pug2thumb.jpg; sourceTree = "<group>"; };
+		2AA4A3F2180BB53700F8DF30 /* pug3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pug3.jpg; sourceTree = "<group>"; };
+		2AA4A3F3180BB53700F8DF30 /* pug3thumb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pug3thumb.jpg; sourceTree = "<group>"; };
+		2AA4A3F4180BB53700F8DF30 /* pug4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pug4.jpg; sourceTree = "<group>"; };
+		2AA4A3F5180BB53700F8DF30 /* pug4thumb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pug4thumb.jpg; sourceTree = "<group>"; };
 		2AB581871808FE4F00561E6D /* SnugglyPugs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SnugglyPugs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2AB5818A1808FE4F00561E6D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		2AB5818C1808FE4F00561E6D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -102,6 +118,14 @@
 		2AB581911808FE4F00561E6D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				2AA4A3EE180BB53700F8DF30 /* pug1.jpg */,
+				2AA4A3EF180BB53700F8DF30 /* pug1thumb.jpg */,
+				2AA4A3F0180BB53700F8DF30 /* pug2.jpg */,
+				2AA4A3F1180BB53700F8DF30 /* pug2thumb.jpg */,
+				2AA4A3F2180BB53700F8DF30 /* pug3.jpg */,
+				2AA4A3F3180BB53700F8DF30 /* pug3thumb.jpg */,
+				2AA4A3F4180BB53700F8DF30 /* pug4.jpg */,
+				2AA4A3F5180BB53700F8DF30 /* pug4thumb.jpg */,
 				2AB581921808FE4F00561E6D /* SnugglyPugs-Info.plist */,
 				2AB581931808FE4F00561E6D /* InfoPlist.strings */,
 				2AB581961808FE4F00561E6D /* main.m */,
@@ -194,6 +218,14 @@
 				2AB5819F1808FE4F00561E6D /* Default@2x.png in Resources */,
 				2AB581A11808FE4F00561E6D /* Default-568h@2x.png in Resources */,
 				2AB581A41808FE4F00561E6D /* MainStoryboard.storyboard in Resources */,
+				2AA4A3F6180BB53700F8DF30 /* pug1.jpg in Resources */,
+				2AA4A3F7180BB53700F8DF30 /* pug1thumb.jpg in Resources */,
+				2AA4A3F8180BB53700F8DF30 /* pug2.jpg in Resources */,
+				2AA4A3F9180BB53700F8DF30 /* pug2thumb.jpg in Resources */,
+				2AA4A3FA180BB53700F8DF30 /* pug3.jpg in Resources */,
+				2AA4A3FB180BB53700F8DF30 /* pug3thumb.jpg in Resources */,
+				2AA4A3FC180BB53700F8DF30 /* pug4.jpg in Resources */,
+				2AA4A3FD180BB53700F8DF30 /* pug4thumb.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -332,6 +364,7 @@
 				2AB581AF1808FE4F00561E6D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
