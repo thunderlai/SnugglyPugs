@@ -7,12 +7,28 @@
 //
 
 #import "AppDelegate.h"
+// At top of file
+#import "MasterViewController.h"
+#import "SnugglyPugDoc.h"
+
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    
+    // At beginning of application:didFinishLaunchingWithOptions
+    SnugglyPugDoc *bug1 = [[SnugglyPugDoc alloc] initWithTitle:@"Potato Bug" rating:4 thumbImage:[UIImage imageNamed:@"pug1thumb.jpg"] fullImage:[UIImage imageNamed:@"pug1.jpg"]];
+    SnugglyPugDoc *bug2 = [[SnugglyPugDoc alloc] initWithTitle:@"House Centipede" rating:3 thumbImage:[UIImage imageNamed:@"pug2thumb.jpg"] fullImage:[UIImage imageNamed:@"pug2.jpg"]];
+    SnugglyPugDoc *bug3 = [[SnugglyPugDoc alloc] initWithTitle:@"Wolf Spider" rating:5 thumbImage:[UIImage imageNamed:@"pug3thumb.jpg"] fullImage:[UIImage imageNamed:@"pug3.jpg"]];
+    SnugglyPugDoc *bug4 = [[SnugglyPugDoc alloc] initWithTitle:@"Lady Bug" rating:1 thumbImage:[UIImage imageNamed:@"pug4humb.jpg"] fullImage:[UIImage imageNamed:@"pug4.jpg"]];
+    NSMutableArray *bugs = [NSMutableArray arrayWithObjects:bug1, bug2, bug3, bug4, nil];
+    
+    UINavigationController * navController = (UINavigationController *) self.window.rootViewController;
+    MasterViewController * masterController = [navController.viewControllers objectAtIndex:0];
+    masterController.bugs = bugs;
+    
     return YES;
 }
 							

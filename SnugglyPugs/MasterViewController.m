@@ -39,7 +39,7 @@
     self.navigationItem.rightBarButtonItem = addButton;
 
     // At the end of viewDidLoad
-    self.title = @"Scary Bugs";
+    self.title = @"Snuggly Pugs";
 }
 
 
@@ -57,7 +57,9 @@
     }
     [_objects insertObject:[NSDate date] atIndex:0];
     NSIndexPath *indexPath = [NSIndexPath indexPathForRow:0 inSection:0];
+    [self.tableView beginUpdates]; /* added by clai */
     [self.tableView insertRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
+    [self.tableView endUpdates]; /*added by clai */
 }
 
 
@@ -123,14 +125,14 @@
 }
 */
 
-/*
+
 // Override to support conditional rearranging of the table view.
 - (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath
 {
     // Return NO if you do not want the item to be re-orderable.
     return YES;
 }
-*/
+
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
