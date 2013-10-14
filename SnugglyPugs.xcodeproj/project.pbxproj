@@ -15,6 +15,12 @@
 		2AA4A3FB180BB53700F8DF30 /* pug3thumb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2AA4A3F3180BB53700F8DF30 /* pug3thumb.jpg */; };
 		2AA4A3FC180BB53700F8DF30 /* pug4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2AA4A3F4180BB53700F8DF30 /* pug4.jpg */; };
 		2AA4A3FD180BB53700F8DF30 /* pug4thumb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2AA4A3F5180BB53700F8DF30 /* pug4thumb.jpg */; };
+		2AA4A401180BB79400F8DF30 /* RateView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AA4A400180BB79400F8DF30 /* RateView.m */; };
+		2AA4A405180BB7D300F8DF30 /* UIImageExtras.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AA4A404180BB7D300F8DF30 /* UIImageExtras.m */; };
+		2AA4A40B180BB80C00F8DF30 /* logo1.png in Resources */ = {isa = PBXBuildFile; fileRef = 2AA4A407180BB80C00F8DF30 /* logo1.png */; };
+		2AA4A40C180BB80C00F8DF30 /* shockedface2_empty.png in Resources */ = {isa = PBXBuildFile; fileRef = 2AA4A408180BB80C00F8DF30 /* shockedface2_empty.png */; };
+		2AA4A40D180BB80C00F8DF30 /* shockedface2_full.png in Resources */ = {isa = PBXBuildFile; fileRef = 2AA4A409180BB80C00F8DF30 /* shockedface2_full.png */; };
+		2AA4A40E180BB80C00F8DF30 /* shockedface2_half.png in Resources */ = {isa = PBXBuildFile; fileRef = 2AA4A40A180BB80C00F8DF30 /* shockedface2_half.png */; };
 		2AB5818B1808FE4F00561E6D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AB5818A1808FE4F00561E6D /* UIKit.framework */; };
 		2AB5818D1808FE4F00561E6D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AB5818C1808FE4F00561E6D /* Foundation.framework */; };
 		2AB5818F1808FE4F00561E6D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AB5818E1808FE4F00561E6D /* CoreGraphics.framework */; };
@@ -40,6 +46,14 @@
 		2AA4A3F3180BB53700F8DF30 /* pug3thumb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pug3thumb.jpg; sourceTree = "<group>"; };
 		2AA4A3F4180BB53700F8DF30 /* pug4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pug4.jpg; sourceTree = "<group>"; };
 		2AA4A3F5180BB53700F8DF30 /* pug4thumb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pug4thumb.jpg; sourceTree = "<group>"; };
+		2AA4A3FF180BB79400F8DF30 /* RateView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RateView.h; path = ExtraStuffForScaryBugs/RateView.h; sourceTree = "<group>"; };
+		2AA4A400180BB79400F8DF30 /* RateView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RateView.m; path = ExtraStuffForScaryBugs/RateView.m; sourceTree = "<group>"; };
+		2AA4A403180BB7D300F8DF30 /* UIImageExtras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UIImageExtras.h; path = ExtraStuffForScaryBugs/UIImageExtras.h; sourceTree = "<group>"; };
+		2AA4A404180BB7D300F8DF30 /* UIImageExtras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UIImageExtras.m; path = ExtraStuffForScaryBugs/UIImageExtras.m; sourceTree = "<group>"; };
+		2AA4A407180BB80C00F8DF30 /* logo1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = logo1.png; path = ExtraStuffForScaryBugs/logo1.png; sourceTree = "<group>"; };
+		2AA4A408180BB80C00F8DF30 /* shockedface2_empty.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = shockedface2_empty.png; path = ExtraStuffForScaryBugs/shockedface2_empty.png; sourceTree = "<group>"; };
+		2AA4A409180BB80C00F8DF30 /* shockedface2_full.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = shockedface2_full.png; path = ExtraStuffForScaryBugs/shockedface2_full.png; sourceTree = "<group>"; };
+		2AA4A40A180BB80C00F8DF30 /* shockedface2_half.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = shockedface2_half.png; path = ExtraStuffForScaryBugs/shockedface2_half.png; sourceTree = "<group>"; };
 		2AB581871808FE4F00561E6D /* SnugglyPugs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SnugglyPugs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2AB5818A1808FE4F00561E6D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		2AB5818C1808FE4F00561E6D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -78,6 +92,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2AA4A3FE180BB75B00F8DF30 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2AA4A3FF180BB79400F8DF30 /* RateView.h */,
+				2AA4A400180BB79400F8DF30 /* RateView.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		2AA4A402180BB7A400F8DF30 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				2AA4A403180BB7D300F8DF30 /* UIImageExtras.h */,
+				2AA4A404180BB7D300F8DF30 /* UIImageExtras.m */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
+		2AA4A406180BB7DD00F8DF30 /* Art */ = {
+			isa = PBXGroup;
+			children = (
+				2AA4A407180BB80C00F8DF30 /* logo1.png */,
+				2AA4A408180BB80C00F8DF30 /* shockedface2_empty.png */,
+				2AA4A409180BB80C00F8DF30 /* shockedface2_full.png */,
+				2AA4A40A180BB80C00F8DF30 /* shockedface2_half.png */,
+			);
+			name = Art;
+			sourceTree = "<group>";
+		};
 		2AB5817E1808FE4F00561E6D = {
 			isa = PBXGroup;
 			children = (
@@ -108,6 +151,9 @@
 		2AB581901808FE4F00561E6D /* SnugglyPugs */ = {
 			isa = PBXGroup;
 			children = (
+				2AA4A406180BB7DD00F8DF30 /* Art */,
+				2AA4A402180BB7A400F8DF30 /* Helpers */,
+				2AA4A3FE180BB75B00F8DF30 /* Views */,
 				2AB581B11808FF7100561E6D /* Model */,
 				2AB581B01808FF5300561E6D /* GUI */,
 				2AB581911808FE4F00561E6D /* Supporting Files */,
@@ -226,6 +272,10 @@
 				2AA4A3FB180BB53700F8DF30 /* pug3thumb.jpg in Resources */,
 				2AA4A3FC180BB53700F8DF30 /* pug4.jpg in Resources */,
 				2AA4A3FD180BB53700F8DF30 /* pug4thumb.jpg in Resources */,
+				2AA4A40B180BB80C00F8DF30 /* logo1.png in Resources */,
+				2AA4A40C180BB80C00F8DF30 /* shockedface2_empty.png in Resources */,
+				2AA4A40D180BB80C00F8DF30 /* shockedface2_full.png in Resources */,
+				2AA4A40E180BB80C00F8DF30 /* shockedface2_half.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -242,6 +292,8 @@
 				2AB581AA1808FE4F00561E6D /* DetailViewController.m in Sources */,
 				2AB581B41808FFBE00561E6D /* SnugglyPugData.m in Sources */,
 				2AB581B71809017100561E6D /* SnugglyPugDoc.m in Sources */,
+				2AA4A401180BB79400F8DF30 /* RateView.m in Sources */,
+				2AA4A405180BB7D300F8DF30 /* UIImageExtras.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

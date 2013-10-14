@@ -57,9 +57,9 @@
     }
     [_objects insertObject:[NSDate date] atIndex:0];
     NSIndexPath *indexPath = [NSIndexPath indexPathForRow:0 inSection:0];
-    [self.tableView beginUpdates]; /* added by clai */
+    //[self.tableView beginUpdates]; /* added by clai */
     [self.tableView insertRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
-    [self.tableView endUpdates]; /*added by clai */
+    //[self.tableView endUpdates]; /*added by clai */
 }
 
 

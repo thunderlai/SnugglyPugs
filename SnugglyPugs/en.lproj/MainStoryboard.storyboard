@@ -71,24 +71,36 @@
                         <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Detail view content goes here" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="27">
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" size="system"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="7r4-lq-KD6">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="269" id="0nT-QE-f0f"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="words"/>
+                            </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="t60-rc-z0W">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="360" id="cwR-Pj-Mb9"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cqe-HU-QMl">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="27" firstAttribute="centerY" secondItem="22" secondAttribute="centerY" type="default" id="7cE-gL-0wv"/>
-                            <constraint firstItem="27" firstAttribute="leading" secondItem="22" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="R0m-z7-TWk"/>
-                            <constraint firstAttribute="trailing" secondItem="27" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="pRe-qY-58T"/>
+                            <constraint firstItem="7r4-lq-KD6" firstAttribute="leading" secondItem="t60-rc-z0W" secondAttribute="leading" type="default" id="2e4-Lh-lPB"/>
+                            <constraint firstItem="7r4-lq-KD6" firstAttribute="top" secondItem="22" secondAttribute="top" constant="6" id="Cmz-7m-s3F"/>
+                            <constraint firstItem="t60-rc-z0W" firstAttribute="top" secondItem="7r4-lq-KD6" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="Hb0-Bz-1hg"/>
+                            <constraint firstItem="t60-rc-z0W" firstAttribute="trailing" secondItem="7r4-lq-KD6" secondAttribute="trailing" type="default" id="JpE-8c-6hn"/>
+                            <constraint firstItem="t60-rc-z0W" firstAttribute="trailing" secondItem="cqe-HU-QMl" secondAttribute="trailing" type="default" id="Mg1-vH-Ulh"/>
+                            <constraint firstItem="7r4-lq-KD6" firstAttribute="centerX" secondItem="22" secondAttribute="centerX" type="default" id="MvJ-Di-jYy"/>
+                            <constraint firstItem="t60-rc-z0W" firstAttribute="leading" secondItem="cqe-HU-QMl" secondAttribute="leading" type="default" id="nGW-Lp-r6R"/>
+                            <constraint firstAttribute="bottom" secondItem="cqe-HU-QMl" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="oeP-uz-MSF"/>
+                            <constraint firstItem="cqe-HU-QMl" firstAttribute="top" secondItem="22" secondAttribute="top" constant="436" id="uji-vA-JWU"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Detail" id="26"/>
-                    <connections>
-                        <outlet property="detailDescriptionLabel" destination="27" id="28"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="23" sceneMemberID="firstResponder"/>
             </objects>
