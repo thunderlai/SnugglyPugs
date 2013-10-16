@@ -11,8 +11,9 @@
 #import "SnugglyPugData.h"
 
 #import "MasterViewController.h"
-
 #import "DetailViewController.h"
+// Add to top of file
+//#import "DetailViewController.h"
 
 @interface MasterViewController () {
     NSMutableArray *_objects;
@@ -42,7 +43,13 @@
     self.title = @"Snuggly Pugs";
 }
 
+// Add at end of viewWillAppear
+//[self.tableView reloadData];
 
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+}
 
 - (void)didReceiveMemoryWarning
 {
@@ -133,7 +140,7 @@
     return YES;
 }
 
-
+/*
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     if ([[segue identifier] isEqualToString:@"showDetail"]) {
@@ -142,5 +149,13 @@
         [[segue destinationViewController] setDetailItem:object];
     }
 }
+*/
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    DetailViewController *detailController =segue.destinationViewController;
+    SnugglyPugDoc *bug = [self.bugs objectAtIndex:self.tableView.indexPathForSelectedRow.row];
+    detailController.detailItem = bug;
+}
+
 
 @end
